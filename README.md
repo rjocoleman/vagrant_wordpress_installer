@@ -7,7 +7,7 @@ It's designed to automatically get the cookbook and a vagrantfile down for an ex
 
 When used with the included installer it will work with your current VCS. (i.e. This repo's `.git` folder is removed to prevent pollution).
 
-My [vagrant_wordpress](https://github.com/rjocoleman/vagrant_wordpress) cookbook installs Apache, PHP, MySQL sever and required modules for deployment with Wordpress. It also configures Apache VirtualHosts to have you up an running in a virtualised environment in a flash.
+My [vagrant_wordpress](https://github.com/rjocoleman/vagrant_wordpress) cookbook installs Apache, PHP, MySQL sever and required modules for deployment with Wordpress. It also configures Apache VirtualHosts to have you up an running in a virtualised environment in a flash.  
 
 
 Dependancies
@@ -28,10 +28,11 @@ Usage
 -----
 
 Run this one-liner (in your project's root directory)  
-`$ \curl -L https://wp.rjoc.me | bash `  
-_Point to be noted is, there is a backslash before _curl_. This prevents misbehaving if you have aliased it with configuration in your ~/.curlrc file._
+`$ \curl -L http://wp.rjoc.me | bash `  
+_Point to be noted is, there is a backslash before _curl_. This prevents misbehaving if you have aliased it with configuration in your ~/.curlrc file._  
 
-Edit your new `Vagrantfile` or go straight to `$ vagrant up`.
+Edit your new `Vagrantfile` or go straight to `$ vagrant up`.  
+Point your browser to `http://localhost:2080/`  
 
 Todo
 ----
