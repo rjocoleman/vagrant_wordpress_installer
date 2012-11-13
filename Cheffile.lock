@@ -31,8 +31,10 @@ SITE
     xml (1.0.4)
     yum (1.0.0)
 
-PATH
-  remote: ../cookbooks/vagrant_wordpress
+GIT
+  remote: https://github.com/rjocoleman/vagrant_wordpress
+  ref: master
+  sha: 83c43f3d5b9a84575c3a226ff5166a407a159a1e
   specs:
     vagrant_wordpress (0.0.1)
       apache2 (>= 0.0.0)

@@ -4,6 +4,5 @@
 site 'http://community.opscode.com/api/v1'
 
 cookbook 'vagrant_wordpress',
-#  :git => 'https://github.com/rjocoleman/vagrant_wordpress',
-#  :ref => 'master'
-:path => '../cookbooks/vagrant_wordpress'
+  :git => 'https://github.com/rjocoleman/vagrant_wordpress',
+  :ref => 'master'
