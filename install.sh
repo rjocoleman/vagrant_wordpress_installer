@@ -30,16 +30,12 @@ rm -rf $tmp
 
 if [[ ! -f librarian-chef ]]
 then
-  log "Updating cookbooks." 
+  log "Updating cookbooks" 
   cd $here 
   librarian-chef update
-  log "Updating cookbooks complete."
+  log "Updating cookbooks complete"
 fi
 
 log "Done! For more info visit:"
 log "http://github.com/rjocoleman/vagrant_wordpress_installer"
-
-
-
-
 exit 0
