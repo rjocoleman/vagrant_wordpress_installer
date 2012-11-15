@@ -1,13 +1,14 @@
-version "0.0.1"
+name "vagrant_wordpress"
+version "0.0.2"
 description "A Chef cookbook for deployment of Wordpress with Vagrant."
 
 supports "ubuntu"
 
-depends "apache2"
-depends "mysql"
-depends "database"
-depends "git"
-depends "php"
 depends "apt"
+depends "build-essential"
+depends "git"
+depends "mysql"
+depends "php"
+depends "apache2"
 
 recipe "vagrant_wordpress", "Main configuration for Wordpress"

@@ -29,7 +29,7 @@ Usage
 
 Run this one-liner (in your project's root directory)  
 `$ \curl -L http://wp.rjoc.me | bash `  
-_Point to be noted is, there is a backslash before _curl_. This prevents misbehaving if you have aliased it with configuration in your ~/.curlrc file._  
+_Point to be noted is, there is a backslash before __curl__. This prevents misbehaving if you have aliased it with configuration in your ~/.curlrc file._  
 
 Edit your new `Vagrantfile` or go straight to `$ vagrant up`.  
 Point your browser to `http://localhost:2080/`  

@@ -9,10 +9,21 @@ include_recipe "php::module_gd"
 include_recipe "php::module_curl"
 include_recipe "apache2"
 include_recipe "apache2::mod_php5"
+include_recipe "apache2::mod_rewrite"
 
-#add mod_rewrite
-apache_module "rewrite" do
-  enable true
+#install apt zip package
+package "zip" do
+  action :install
+end
+
+#pcre headers are required for some pecl extns (like zip)
+package "libpcre3-dev" do
+  action :install
+end
+
+#install the zip pecl
+php_pear "zip" do
+  action :install
 end
 
 #disable default virtualhost.

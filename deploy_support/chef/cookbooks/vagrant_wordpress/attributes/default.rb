@@ -8,5 +8,6 @@ default['vagrant_wordpress']['config']['db_name'] = "wordpress"              #da
 #override attributes for our included recipes
 override['build_essential']['compiletime'] = true
 override['mysql']['server_root_password'] = "root"
+override['mysql']['allow_remote_root'] = true
 override['mysql']['tunable']['key_buffer'] = "64M"
 override['mysql']['tunable']['innodb_buffer_pool_size'] = "32M"
