@@ -25,7 +25,7 @@ rm -f $tmp/README* $tmp/install.sh
 cat $tmp/.gitignore >> $here/.gitignore
 rm -rf $tmp/.gitignore
 
-cp -r $tmp/* $here/ &> /dev/null
+cp -r $tmp/ $here/ &> /dev/null
 rm -rf $tmp
 
 if [[ ! -f librarian-chef ]]
