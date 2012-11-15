@@ -8,6 +8,7 @@ depends "apt"
 depends "build-essential"
 depends "git"
 depends "mysql"
+depends "database"
 depends "php"
 depends "apache2"
 
